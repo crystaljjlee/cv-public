@@ -1,0 +1,577 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,letterpaper,sans,unicode]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage{hyperref}
+\hypersetup{
+    unicode=true,
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+
+% moderncv themes
+\moderncvstyle{classic}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+% \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+
+%\usepackage{lastpage}
+\usepackage{fancyhdr}
+\usepackage[fixed]{fontawesome5}
+\usepackage{textcomp}
+
+
+\fancyhead{}
+\fancyfoot{}
+\cfoot{\thepage{}~of~7}
+% \pagestyle{fancy}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\name{}{Crystal Lee}
+\renewcommand*{\namefont}{\fontsize{24}{28}\mdseries\upshape}
+\email{crystall@mit.edu}                               % optional, remove / comment the line if not wanted
+\homepage{http://web.mit.edu/crystall/www/}                         % optional, remove / comment the line if not wanted
+\social[twitter]{crystaljjlee}                             % optional, remove / comment the line if not wanted
+%\social[github]{crystaljjlee}                              % optional, remove / comment the line if not wanted
+\extrainfo{Updated July 2022}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       resume       ---------------------------------------------------------
+
+\makecvtitle
+\section{Appointments}
+    % \cventry{July 2023--}{Assistant Professor}{}{Computational Media and Design, MIT}{}{Institute for Data, Systems, and Society (IDSS), Schwarzman College of Computing \newline Comparative Media Studies }
+
+    \cventry{July 2023--}{Assistant Professor}{}{Computational Media and Design, MIT}{}{Comparative Media Studies }
+    \cventry{2022--}{Faculty Associate}{}{Berkman Klein Center for Internet and Society, Harvard University}{}{Co-lead, Ethical Tech Working Group. Former Fellow (2020--2021) and Affiliate (2021--2022).}
+    
+    \cventry{2022--}{Senior Fellow}{}{Responsible Computer Science}{Mozilla}{}
+    
+    \cventry{2022--2023}{Postdoctoral Associate}{}{Schwarzman College of Computing}{MIT}{}
+    
+    % \cventry{2021--2022}{Affiliate}{}{Berkman Klein Center for Internet and Society, Harvard University}{}{}
+    % \cventry{2020--2021}{Fellow}{}{Berkman Klein Center for Internet and Society, Harvard University}{}{}
+    \cventry{2018}{Visiting Scientist}{}{Joint Research Center (Italy), European Commission}{}{}
+    
+\section{Education}
+    \cventry{2022}{PhD}{}{Massachusetts Institute of Technology}{}{History, Anthropology, Science, Technology, and Society (HASTS) \newline Visualization Group, Computer Science and Artificial Intelligence Laboratory (CSAIL)}
+    \cventry{2016}{MA}{History of Science}{Stanford University}{}{}
+    \cventry{2015}{BA (high honors)}{History of Science}{Stanford University}{}{}
+
+
+
+\section{Research Interests}
+    \cvitem{}{Data visualization, critical data studies, digital media, science and technology studies, human-computer interaction, disability studies}
+
+\section{Selected Fellowships, Grants, and Awards}
+
+\subsection{External awards}
+
+\cvitem{2022}{Honorable Mention, Eurographics Conference on Visualization (EuroVis; top 3 papers)}
+
+\cvitem{2021}{Honorable Mention, Conference on Human Factors in Computing Systems (top 5\%)}
+
+\cvitem{2020}{National Science Foundation Dissertation Improvement Grant \href{https://www.nsf.gov/awardsearch/showAward?AWD_ID=1941577&HistoricalAwards=false}{\#1941577} (\$18,825)}
+    \cvitem{}{Social Science Research Council (SSRC) \href{https://www.ssrc.org/fellowships/view/social-data-research-and-dissertation-fellowships/grantees/lee/}{Social Data Dissertation Fellowship} (\$15,000)}
+
+\cvitem{2017}{Digital Humanities Summer Institute Scholarship, University of Victoria}
+
+\subsection{Internal awards}
+
+    \cvitem{2021}{MIT Undergraduate Experiential Learning Opportunity Grant (\$15,680)}
+        \cvitem{}{T.S. Lin Fellowship, MIT}
+    \cvitem{}{Outstanding UROP Mentorship Award, MIT} 
+
+    \cvitem{}{MIT Schwarzman College of Computing Grant (\$10,188)}
+    
+    \cvitem{}{MIT Digital Humanities Summer Graduate Fellowship}
+    
+    % \cvitem{}{MIT Kelly Douglas Research Grant (also received in 2017, 2018)}
+
+% \cvitem{2018}{Research Grant, MIT International Science and Technology Initiatives (MISTI)}
+
+
+\cvitem{2016}{MIT Presidential Fellowship}
+    % \cvitem{}{Ida M. Green Fellowship, MIT}
+    \cvitem{}{Lane Research Grant in the History of Science, Stanford University}
+    % \cvitem{}{Travel Bursary, Australasian Association for the Digital Humanities}
+    % \cvitem{}{Silas Palmer Fellowship, Stanford University}
+    
+%\cvitem{2016, 17}{Conference Travel Grant, National Science Foundation}
+
+
+%\cvitem{2020}{Kelly Douglas Research Grant, MIT School of Humanities, Arts, and Social Sciences}
+%\cvitem{}{Travel Grant, MIT Graduate Student Council}
+
+%2017
+%\cvitem{}{Kelly Douglas Research Grant, MIT School of Humanities, Arts, and Social Sciences}
+%\cvitem{}{Graduate Student Life Grant, MIT Office of the Dean for Graduate Education}
+%\cvitem{}{Start-up Grant, MIT Graduate Student Council}
+%\cvitem{}{Diversity Grant, MIT Graduate Student Council}
+%\cvitem{}{Professional Development Grant, MIT Graduate Student Council}
+
+% ----------------------
+% PUBLICATIONS 
+% ----------------------
+
+\section{Peer-Reviewed Publications}
+
+\cvitem{2023}{Gracen Brilmyer* and \textbf{Crystal Lee*}. ``\href{https://firstmonday.org/ojs/index.php/fm/article/view/12935}{Terms of use: Crip legibility in information systems},'' \textit{First Monday} (January 2023).}
+
+\cvitem{2022 \faAward \textit{Honorable Mention}}{Jonathan Zong*, \textbf{Crystal Lee*}, Alan Lundgard*, JiWoong Jang, Daniel Hajas, Arvind Satyanarayan. ``\href{http://vis.csail.mit.edu/pubs/rich-screen-reader-vis-experiences}{Rich Screen Reader Experiences for Accessible Data Visualization},'' \textit{Eurographics Conference on Visualization} (May 2022).}
+
+\cvitem{2021}{Jamie Wong*, \textbf{Crystal Lee*}, Vesper Long*, Di Wu*, Graham Jones*. ``\href{https://journals.sagepub.com/doi/full/10.1177/20563051211024960}{Let's Go, Baby Forklift:  The Power of Cuteness and the Cuteness of Power on Chinese Social Media},'' \textit{Social Media + Society} (April 2021).}
+
+\cvitem{2021 \faAward \textit{Honorable Mention}}{\textbf{Crystal Lee}, Tanya Yang, Gabrielle Inchoco, Graham M. Jones, and Arvind Satyanarayan, ``\href{http://vis.mit.edu/pubs/viral-visualizations}{Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online}.'' \textit{ACM Human Factors in Computing Systems (CHI)}, 2021. [\href{https://youtu.be/dj-8DUW39E4}{video}]}
+
+\cvitem{2019}{Alan Lundgard*, \textbf{Crystal Lee*} (co-first author), and Arvind Satyanarayan, ``\href{http://vis.mit.edu/pubs/sociotechnical-vis-access}{Sociotechnical Considerations for Accessible Visualization Design},'' \textit{IEEE Transactions on Visualization and Computer Graphics} (October 2019). [\href{https://vimeo.com/363041501}{video}]}
+
+% ----------------------
+% FORTHCOMING 
+% ----------------------
+
+%\section{Forthcoming Publications} 
+
+% ----------------------
+% ESSAYS & REPORTS
+% ----------------------
+
+\section{Reviews, Essays, and Reports} 
+
+\cvitem{2022}{\textbf{Crystal Lee}, ``Review: A History of Data Visualization and Graphic Communication,'' \textit{Information and Culture}, 60.1 (Spring 2022).}
+
+\cvitem{2021}{Jad Esber, Boaz Sender, Ethan Zuckerman, \textbf{Crystal Lee}, Nana Nwachukwu, Oumou Ly, Peter Suber, Primavera De Filippi, Sahar Massachi, Samuel Klein, Tom Zick, ``\href{https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3816729}{A meta-proposal for Twitter's bluesky project}.'' March 31, 2021. Social Science Research Network.} 
+
+\cvitem{2019}{\textbf{Crystal Lee*} and Jonathan Zong*, ``\href{https://slate.com/technology/2019/08/consent-facial-recognition-data-privacy-technology.html}{Consent is Not An Ethical Rubber Stamp}.'' \textit{Slate}. August 30, 2019.}
+
+\cvitem{2018}{\textbf{Crystal Lee}, ``Global Conflict Risk Index Final Consulting Report,'' prepared for the Peace and Stability Unit, Joint Research Center, European Commission.} 
+
+\cvitem{2016}{\textbf{Crystal Lee}, ``\href{http://web.mit.edu/crystall/www/files/British-Visions-War-Peace.pdf}{Wartime Collaborations in Computing and Intelligence Collection},'' in Crystal Lee, ed., \textit{Glimpses: British Visions of War and Peace} (exhibit essay collection).}
+
+% ----------------------
+% DIGITAL PROJECTS 
+% ----------------------
+
+\section{Data Visualization and Museum Projects}
+
+\cvitem{2021}{\textbf{Crystal Lee}, Jonathan Zong, Anna Arpaci-Dusseau, Katherine Huang, Mateo Monterde, Ethan Nevidomsky, Tanya Yang, Anna Meurer, Soomin Chun, and Arvind Satyanarayan, \textit{\href{http://vis.mit.edu/covid-story/}{The Data Visualizations Behind Coronavirus Skepticism}} (interactive digital project).}
+
+\cvitem{2016}{\textbf{Crystal Lee*}, Murphy Temple*, Meade Klingensmith*, Holly Dayton*, \textit{\href{https://www.hoover.org/events/glimpses-british-visions-war-peace}{Glimpses: British Visions of War and Peace}} (museum exhibition), Stanford University.}
+
+% ----------------------
+% INVITED ACADEMIC TALKS 
+% ----------------------
+% \section{Invited Talks}
+%[Note: all talks in 2020 and 2021 have been rescheduled or made virtual due to COVID-19.] 
+%\vspace{5mm} %5mm vertical space
+
+% ------ KEYNOTES  ------
+\section{Keynotes}
+\cvitem{May 2022}{``On Data Justice and Accessible Systems.'' Keynote Address, Code4Lib (May 24, 2022).}
+
+% ------ INVITED SEMINAR TALKS ------
+
+\section{Invited Seminar Talks}
+
+\cvitem{July 2021}{``\href{https://vimeo.com/575214006}{Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online}.'' DUB Shorts, University of Washington (July 14, 2021).}
+
+\cvitem{May 2021}{``\href{https://docs.google.com/presentation/d/1mPtc_y8OhSEHBaFwbhFXhKHtjqNhNnZGcLG0cjls0aE/edit\#slide=id.gd85e560ebb_0_1064}{Academic Ableism and New Paradigms for Design}.'' The Science Speak-Easy, University of Colorado-Boulder (May 17, 2021).}
+
+\cvitem{March 2021}{``\href{https://calendar.mit.edu/event/visualmisinformation}{Visualizing Misinformation: Digital Ethnography and Computational Methods in a Pandemic}.'' MIT Digital Humanities Speaker Series (March 18, 2021).}
+
+\cvitem{Feb 2021}{``\href{https://crystaljjlee.github.io/2021/02/11/reimagining-access.html}{Beyond Visualization: Technoableism and New Paradigms for Design}.'' \textit{Reimagining Access: Inclusive Technology Design for Archives and Special Collections}, ArtCenter College of Design (February 11, 2021).} 
+
+\cvitem{Nov 2020}{``\href{http://web.mit.edu/crystall/www/files/tufts-promises-perils.pdf}{The Promises and Perils of Data Visualization},'' Tufts STS Seminar, Tufts University (November 13, 2020).}
+
+\cvitem{Oct 2020}{``Learning from COVID-19 Data Visualizations.'' Berkman Klein Center for Internet and Society, Harvard University (October 28, 2020).}
+
+\cvitem{April 2017}{``\href{https://github.com/matthewljones/visualizationhistory}{Lining Things Up: Mapping Time, Power, and Politics},'' \textit{History of Visualization / Visualizations in History}. Center for Science and Society, Columbia University (April 8, 2017).}
+
+% ------ INVITED EVENTS ------
+
+\section{Invited Academic Roundtables and Panel Discussions}
+
+\cvitem{July 2021}{``\href{https://stanford.zoom.us/rec/share/ISL4AoDN3IDZJI1xMMC-MHlLFu421LfhRyUPkzrpXFuoEjCGrcgG0oz_YCbSGPIQ.Jr_e9XrDlQ3FejwY}{Going Viral: How Covid Misinformation Spreads Online}'' (invited panel with Carl Bergstrom and Chase Small). \textit{Scientists Speak Up}, Stanford University (July 29, 2021).}
+
+\cvitem{June 2021}{``\href{https://www.adalovelaceinstitute.org/event/prototyping-ai-ethics-futures-rights-access-refusal/}{Prototyping AI ethics futures: Rights, access, and refusal}'' (invited roundtable with Alex Taylor and Mara Mills). JUST AI joint event between Ada Lovelace Institute, British Academy, and the UK Arts and Humanities Research Council (June 23, 2021).}
+
+\cvitem{June 2021}{``\href{https://docs.google.com/presentation/d/1XmjMw2ZvaxmJEN-DW09yZrzB1gbowRmnWr4WAZPRXvE/edit?usp=sharing}{Talking About and Thinking with Disability}'' (invited panel with Cora Olson and Ashley Shew). \textit{STS as Critical Pedagogy}, James Madison University (June 23, 2021).}
+
+\cvitem{April 2021}{``\href{https://awnnetwork.org/liberating-webinars/}{Disability Justice \& Crip Technoscience: Racism \& Ableism in AI \& the Future of Technology}'' (with Damien Patrick Williams and Lydia X.Z. Brown). Autistic Women and Nonbinary Network Liberating Webinar Series (April 23, 2021).}
+
+% ------ 2020 ------
+
+
+
+\cvitem{Oct 2020}{``\href{https://www.youtube.com/watch?v=Nfb8obkWB9c}{Data By Touch},'' North American Cartographic Information Society (October 15--16, 2020).}
+
+% \cvitem{2020}{``Using Digital Humanities and STS in Engineering and Humanities Curricula,'' \textit{STS as Critical Pedagogy}, James Madison University (July 30--31). [\textbf{rescheduled} for June/July 2021]}
+
+% \cvitem{April 2020}{``Universalizing Tactile Literacy: Media Ideologies and the History of Braille Uniformity,'' \textit{Before and Beyond Typography}. Stanford Humanities Center, Stanford University (April 24--25, 2020). [cancelled due to COVID-19]}
+
+
+% ----------------------
+% INVITED PUBLIC TALKS 
+% ----------------------
+\section{Invited Public Talks}
+
+\cvitem{Oct 2022}{Invited commentary, ``\href{https://cambridgesciencefestival.org/event/central-square-theater-catalyst-collaborative-science-play-reading-series/}{The Moderate}'' (script by Ken Urban), Central Square Theater and Catalyst Collaborative: Science Play Reading Series, Cambridge Science Festival (October 3, 2022).} 
+
+\cvitem{June 2021}{``More Data, More Problems: Lessons from the Far Right Internet.'' U.S. Department of Health and Human Services (June 10, 2021).} 
+
+\cvitem{May 2021}{``\href{https://www.eventbrite.com/e/dinner-wrai-yx-radical-possibilities-of-technology-tickets-154592370943}{Radical Possibilities for Technology}'' (with Christine McRae and Regan Sommer McCoy). YX Foundation and the Radical AI Podcast (May 18, 2021).}
+
+% ----------------------
+% CONFERENCES 
+% ----------------------
+\newpage
+\section{Conference Presentations}
+
+% ------ 2023 ------
+
+\cvitem{Mar 2023}{``Teaching Responsible Computing in Context: Models, Practices, and Tools,'' SIGCSE Technical Symposium on Computer Science Education (with Stacy Doore, Atri Rudra, Omowumi Ogunyemi, Trystan S. Goetze, Mehran Sahami, Thomas Cortina, and Kiran Bhardwaj). Toronto, Canada and online (March 15--18, 2023).}
+
+% ------ 2022 ------
+
+\cvitem{Dec 2022}{``Everyone Likes Access,'' with Michele Friedner, Daniel Greene, Allison Fish, Vijayanka Nair, and Beth Semel. Society for the Social Studies of Science. Cholula, Mexico (December 7--10, 2022).}
+
+\cvitem{July 2022}{``Incorporating Ethics into Computer Science Education,'' with Bobby Schnabel, Kathy Pham, Casey Fiesler, Helena Mentis, and Atri Rudra. Computing Research Association Conference at Snowbird. Snowbird, UT (July 19--21, 2022).}
+
+% ------ 2021 ------
+
+\cvitem{Oct 2021}{``STS as Critical Pedagogy'' (roundtable discussion), with Emily York, Anna Geltzer, Michael Klein, Sean Ferguson, Marisa Brandt, Jim Malazita, Matthew Harsh, Shelby Dietz, Matt Wisnioski, Nicole Mogul, Kathryn de Ridder-Vignone, and Lindsay Smith. 4S 2021 (virtual).}
+
+\cvitem{May 2021}{``Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online.'' ACM CHI. Yokohama, Japan [virtual] (May 8--13, 2021).}
+
+% ------ 2020 ------
+
+\cvitem{April 2020}{``Multisensory Mapping and Design,'' American Association for Geographers. Denver, CO (April 6--10, 2020).
+[cancelled due to COVID-19]}
+
+\cvitem{April 2020}{``\href{https://docs.google.com/presentation/d/1AqZYQUjMjYdz3qo1Ze62g_c9amu9zV9xTCD2b8pJveM/edit\#slide=id.g722b5a7f8a_0_50}{Practicing Disability Justice: A Working Group on Bringing Activist Praxis into our Teaching and Research},'' (with Cynthia Bennett and Joanne Woiak), Society for Disability Studies. Columbus, OH [virtual] (April 3--5, 2020).}
+
+% ------ 2019 ------
+
+\cvitem{Oct 2019}{``\href{https://docs.google.com/presentation/d/1NtAjFg5JRdDdDSK1eM6s_Pqru3RJej7dmatY5NKX394/edit}{Sociotechnical Considerations for Accessible Visualization Design},'' (with Alan Lundgard), IEEE VIS 2019. Vancouver, Canada (October 20--25, 2019).}
+
+% ------ 2018 ------
+
+\cvitem{Nov 2018}{``Modeling Flavor,'' History of Science Society Annual Meeting. Seattle, WA (November 1--4, 2018).}
+
+% ------ 2017 ------
+
+\cvitem{Nov 2017}{``Visualizing Historical Knowledge,'' History of Science Society Annual Meeting. Toronto, Canada (November 9--11, 2017).}
+
+\cvitem{Nov 2017}{Discussant and chair, ``Computing and Science: Application and Influences.'' History of Science Society Annual Meeting. Toronto, Canada (November 9--12, 2017).}
+
+\cvitem{Sep 2017}{``History Along a Line: Historical Timelines and the Digital Humanities,'' Tradition and Transformation. Emmanuel College, University of Cambridge, UK (September 18--20, 2017).}
+
+% ------ 2016 ------
+
+\cvitem{Nov 2016}{``One Nation Under Quantification: Measuring Nazi-ness in post-1945 Germany,'' History of Science Society Annual Meeting. Atlanta, GA (November 3--6, 2016).}
+
+\cvitem{June 2016}{``Joseph Priestley’s Charts of History \& Biography, Redrawn,'' Digital Humanities Australasia. University of Tasmania, Hobart, Australia (June 20--23, 2016).}
+
+\cvitem{Mar 2016}{``Hidden Narratives: Inventing Universal History in Joseph Priestley’s Charts of History \& Biography,'' Columbia History of Science Group Annual Meeting. Friday Harbor Biological Research Station, University of Washington. Friday Harbor, WA (March 11--13, 2016).}
+
+% ----------------------
+% ORGANIZED EVENTS 
+% ----------------------
+\newpage
+\section{Organized Seminars, Panels, \& Conferences}
+
+\cvitem{2021}{``Toward Accessible Data Representations workshop,'' IEEE Visualization (co-organized with Arvind Satyanarayan, Danielle Szafir, Keke Wu, and Alan Lundgard). Speakers: Cynthia Bennett, Chancey Fleet, Zoe Gross, Ariel Schwartz, and Rua Williams.}
+
+\cvitem{2021}{``Subtle CSCW Traits: Tensions Around Identity Formation and Online Activism in the Asian Diaspora'' workshop, Computer Supported Cooperative Work (with Calvin Liang, Alexandra To, Emily Tseng, Amy Zhang, Kimberley Allison, Neilly Tan, Ruotong Wang, and Sachin Pendse). \href{www.subtlecscwtraits.wordpress.com}{Workshop website}.} 
+
+\cvitem{2021}{Conference Plenary Session: ``Making and Doing History: On Non-Traditional Modes of Critical Engagement'' roundtable discussion, Society for the History of Technology, New Orleans, LA (with Ranjodh Dhaliwal). \href{http://web.mit.edu/crystall/www/files/SHOT2020-MakingHistory.pdf}{Panel abstract.}}
+
+\cvitem{2021}{Misinformation Working Group Invited Speaker Series, Harvard University:  Gerald Mullally (UK Prime Minister's Office), ``G7 Vaccine Confidence Campaign and Research Partnerships''; Yvonne Lee (Facebook), ``Misinformation Policy.''} 
+
+\cvitem{2019--20}{Columbia History of Science Annual Meeting, University of Washington, Friday Harbor Marine Station (program chair with Nathan Kapoor).}
+
+\cvitem{2018}{``Technologies of Taste'' panel, History of Science Society, Seattle, WA (with Hannah Leblanc). \href{http://web.mit.edu/crystall/www/files/HSS2018-Taste.pdf}{Panel abstract.}}
+
+\cvitem{2017--18}{Cross-STS Seminar Series, Massachusetts Institute of Technology (with Elena Sobrino).}
+\cvitem{2017}{Workshop on the History of the Physical Sciences, Princeton University (co-organized with Brad Bolman, Jenne O’Brien, and Michael McGovern).}
+
+% ----------------------
+% WORKSHOPS
+% ----------------------
+
+\section{Workshops} 
+
+\cvitem{}{\textit{Invited workshops have been denoted with an asterisk.}}
+
+\cvitem{2022}{* Data Analysis Donuts: Internal Discussion at ObservableHQ on misinformation.}
+
+\cvitem{2022}{* NSF-funded Workshop on Inclusive and Intersectional Research and Analysis in Engineering and Computer Science (invited participant), Stanford University (August 25–26, 2022).}
+
+\cvitem{2022}{Greater Boston Areas AI Ethics Lightning Round. Ethical Issues in Computing and AI: Research Questions and Pedagogical Strategies, Harvard University (June 1, 2022).}
+
+\cvitem{2022}{* Access Washing in Data Policy and Practice (invited roundtable discussant). Minderoo Centre for Technology and Democracy, University of Cambridge (March 3, 2022).}
+
+\cvitem{2021}{Flash talk, VIS Summer Camp (co-organized by Universities of Florida, Arizona, Utah; Northwestern, Northeastern, and MIT).}
+
+\cvitem{2021}{* ``\href{https://docs.google.com/document/d/1kPNXCEOhGEc9dqKapwK6ZwrV6U72fkmOPK2Lxq-0gxs/edit?q=data+hoarders}{The Future of the Digital Archive: Data Hoarders and Radical Librarianship}.'' \textit{House/Keeping: Domestic Accumulation, Decluttering, and the Stuff of Kinship in Anthropological Perspective}, Laboratoire d'Anthropologie des Mondes Contemporains, Université libre de Bruxelles (May 31–June 2, 2021).} 
+
+\cvitem{2021}{``Methodological Challenges to Studying Online Radicalization'' (with John A. Maldonado and Jonas Kaiser). Workshop discussion, Berkman Klein Center for Internet and Society Festival of Ideas (May 7, 2021).} 
+
+\cvitem{2021}{ACM FAccT Doctoral Consortium. Virtual conference (March 3--10, 2021).}
+
+\cvitem{2021}{* Discussion on ``Viral Visualizations'' project. \textit{MIT Data + Feminism Lab} (March 26, 2021); \textit{University of Washington Social Futures Lab} (February 9, 2021).} 
+
+\cvitem{2020}{Discussant, ``Cripping the History of Computing.'' \textit{MIT HASTS Program Seminar}.}
+
+\cvitem{2018}{Discussant, ``Searching for Google.'' \textit{MIT HASTS}.} 
+
+\cvitem{2017}{Discussant, ``The Multiple Autonomies of Self-Driving Cars.'' \textit{MIT HASTS}.} 
+
+\cvitem{2017}{Discussant, ``Crafting Nanotechnology for Art and Heritage Conservation.'' \textit{MIT HASTS}.}
+
+\cvitem{2016}{``Lining Things Up: Mapping Time, Power, and Politics.'' \textit{MIT HASTS}.} 
+
+\cvitem{2016}{``Digital Methods in History.'' History of Science Workshop, Stanford University.}
+
+% ----------------------
+% RESEARCH MENTORSHIP 
+% ----------------------
+
+\section{Research Mentorship}
+\cvitem{}{\textit{Asterisks denote published student co-author.}}
+
+\cvitem{2022–2023}{\textbf{Social and Ethical Responsibilities of Computing (SERC) Scholars}: Designing Participatory AI Systems Reading Group (with Elizabeth Bondi-Kelly)}
+
+\cvitem{Fall 2022}{\textbf{Harvard Climate Justice Design Fellowship}: Jacqueline Thanh (VAYLA New Orleans)}
+
+\cvitem{Summer 2021}{\textbf{Accessible Interactions} (published in  \textit{EuroVis}): JiWoong Jang* (Carnegie Mellon)}
+
+\cvitem{Spring 2021}{\textbf{The Social Life of Climate Data}: Casey Hong (MS candidate), Emma Chabane} 
+
+\cvitem{Fall 2020}{\textbf{The Data Visualizations Behind Coronavirus Skepticism} (interactive essay)}
+\cvitem{}{Kat Huang*, Anna Arpaci-Dusseau*, Tanya Yang*, Ethan Nevidomsky*, Anna Meurer*, Soomin Chun*, Mateo Monterde*}
+
+\cvitem{Summer 2020}{\textbf{Viral Visualizations} (published in ACM CHI 2021): Tanya Yang*, Gaby Inchoco*}
+
+\cvitem{}{\textbf{Let's Go, Baby Forklift} (published in \textit{Social Media + Society)}: Vesper Long*}
+
+\cvitem{}{\textbf{History of Braille Uniformity}: Zhirui Xiong}
+
+\subsection{Dissertation Committee Advising}
+\cvitem{2022}{Jacqueline Thanh (DSW candidate, USC Dworak-Peck School of Social Work).}
+
+% ----------------------
+% TEACHING 
+% ----------------------
+
+\section{Teaching}
+\subsection{Guest Lectures}
+\cvitem{Spring 2023}{``Academic ableism,'' Feminist Disability Studies (Lydia XZ Brown), Georgetown}
+\cvitem{Spring 2020}{``Methods in Spatial History,'' Intro to Digital History (Stephan Risi), MIT}
+\cvitem{Fall 2019}{``Mapping and Forensic History,'' Forensic History (Kate Brown), MIT}
+
+\subsection{Teaching Assistantships}
+\cvitem{2020}{MIT: Medieval Economic History in Comparative Perspective (no evaluation, COVID)}
+
+\cvitem{2019}{Harvard: Sugar, Spice, and Science: A Global History of Science (evaluation: \href{http://web.mit.edu/crystall/www/files/HISTSCI119-evaluation.pdf}{5.0/5.0}, Certificate of Distinction for Teaching)}
+
+\cvitem{2018}{MIT: American History from 1865 (evaluation: \href{http://web.mit.edu/crystall/www/files/21H.102-evaluation.pdf}{7.0/7.0})}
+
+\cvitem{2017}{MIT: Introduction to Anthropology (evaluation: \href{http://web.mit.edu/crystall/www/files/21A.00-evaluation.pdf}{6.9/7.0})}
+
+
+%\clearpage 
+
+% ----------------------
+% SERVICE 
+% ----------------------
+
+\section{Service}
+
+\subsection{Professional Service}
+    \cvitem{2021}{Program Committee, Visualization for Social Good Workshop, IEEE Visualization}
+    \cvitem{2020}{Program Committee, ACM Conference on Fairness, Accountability, and Transparency}
+
+\subsection{Peer Review}
+    \cvitem{}{ACM FAccT, ACM CHI, IEEE VIS,  \textit{Public Culture}, NeurIPS (ethics committee)} 
+    \cvitem{}{Just Tech Fellowship, Social Science Research Council}
+
+\subsection{Institutional Service}
+    %\cvitem{2020--2021}{Common List qualifying exam revision group, MIT HASTS}
+    \cvitem{2017}{Judge, MIT INSPIRE; Committee, MIT Digital Technology Teaching Awards}
+    \cvitem{2016--18}{Co-founder and Treasurer, Science Studies Student Committee, MIT}
+    \cvitem{2016--17}{Department Representative, MIT Graduate Student Council}
+
+% \section{Interests}
+% \cvitem{hobby 1}{Description}
+% \cvitem{hobby 2}{Description}
+% \cvitem{hobby 3}{Description}
+
+% \section{Extra 1}
+% \cvlistitem{Item 1}
+% \cvlistitem{Item 2}
+% \cvlistitem{Item 3. This item is particularly long and therefore normally spans over several lines. Did you notice the indentation when the line wraps?}
+
+% \section{Extra 2}
+% \cvlistdoubleitem{Item 1}{Item 4}
+% \cvlistdoubleitem{Item 2}{Item 5\cite{book1}}
+% \cvlistdoubleitem{Item 3}{Item 6. Like item 3 in the single column list before, this item is particularly long to wrap over several lines.}
+
+% ----------------------
+% MEDIA 
+% ----------------------
+
+\section{Media}
+
+    \cvitem{2021}{\textbf{Viral Visualizations}:
+        \href{https://slate.com/technology/2021/03/covid-skeptics-critical-thinking-research.html}{Slate},
+        \href{http://createsend.com/t/d-6139423EAB9706592540EF23F30FEDED}{World Health Organization Infodemic Management},
+        \href{https://www.politico.eu/newsletter/digital-bridge/politico-digital-bridge-gdpr-anniversary-adios-gig-economy-covid-19-apps/?utm_source=RSS_Feed&utm_medium=RSS&utm_campaign=RSS_Syndication}{POLITICO},
+        \href{https://lactualite.com/sante-et-science/une-pandemie-de-graphiques/}{L'actualité},
+        \href{https://www.statnews.com/2021/05/24/stanford-professor-and-nobel-laureate-critics-say-he-was-dangerously-misleading-on-covid/}{STAT},
+        \href{https://news.mit.edu/2021/when-more-covid-data-doesnt-equal-more-understanding-0304}{MIT News},
+        \href{https://youtu.be/8MPMOGQaRvo}{The Dissenter podcast},
+        \href{https://podtail.com/podcast/random-walks/untangling-the-complexity-of-science-and-society-w/}{Random Walks podcast}
+    }
+    
+    \cvitem{2020}{\textbf{Disability and design}: \href{https://www.youtube.com/watch?v=gxt_4E4Ue6g&feature=youtu.be}{Al Jazeera English}, \href{https://news.mit.edu/2020/accessible-designs-data\%20visualization-0313}{MIT News}
+    }
+
+% ----------------------
+% MEMBERSHIPS 
+% ----------------------
+
+\section{Professional Organizations} 
+    \cvitem{2020--}{Coalition for Critical Technology, Association for Computing Machinery (ACM), Society for Disability Studies (SDS)} 
+    
+    \cvitem{2019--}{Institute of Electrical and Electronics Engineers (IEEE)}
+    
+    \cvitem{2016--18}{History of Science Society (HSS)}
+
+\section{External Advising} 
+    \cvitem{2022--}{Advisory board member, Disability Inclusion Fund, Borealis Philanthropy}
+    \cvitem{2022--}{Advisory board member, WorkingWell Assistive Technology for Autistic/Neurodivergent Individuals and their Employers}
+    \cvitem{2022--}{Advisory board member, Reco(r)ding CripTech Project, Criptech Incubator, Leonardo (the International Society for Arts + Sciences + Technology).} 
+% ----------------------
+% REFERENCES  
+% ----------------------
+
+% \section{References}
+% \begin{cvcolumns} 
+
+%   \cvcolumn{\color{black}{Graham Jones (co-advisor)}}{\newline Professor, MIT 
+%     \newline Department of Anthropology
+%     \newline  \href{mailto:gmj@mit.edu}{gmj@mit.edu}}
+    
+%   \cvcolumn[0.5]{\color{black}{Arvind Satyanarayan (co-advisor)}}{\newline Assistant Professor, MIT 
+%     \newline  Electrical Engineering \& Computer Science
+%     \newline \href{mailto:arvindsatya@mit.edu}{arvindsatya@mit.edu}} 
+% \end{cvcolumns}
+
+% \begin{cvcolumns}
+%   \cvcolumn{\color{black}{\textbf{William Deringer}}}{\newline Associate Professor, MIT 
+%     \newline Science, Technology, and Society
+%     \newline  \href{mailto:deringer@mit.edu}{deringer@mit.edu}}
+
+%   \cvcolumn[0.5]{\color{black}{\textbf{Eden Medina}}}{\newline Associate Professor, MIT 
+%     \newline Science, Technology, and Society
+%     \newline \href{mailto:eden@mit.edu}{eden@mit.edu}} 
+% \end{cvcolumns}
+
+% \begin{cvcolumns}
+%   \cvcolumn{\color{black}{\textbf{Ashley Shew}}}{\newline Associate Professor, Virginia Tech
+%     \newline Science, Technology, and Society
+%     \newline  \href{mailto:shew@vt.edu}{shew@vt.edu}}
+
+%   \cvcolumn{\color{black}{\textbf{Mary L. Gray}}}{\newline Senior Principal Researcher
+%     \newline Microsoft Research
+%     \newline  \href{mailto:mLg@microsoft.com}{mLg@microsoft.com}}
+
+% \end{cvcolumns}
+
+% \begin{cvcolumns}
+%   \cvcolumn{\color{black}{\textbf{Londa Schiebinger}}}{\newline John L. Hinds Professor of 
+%     \newline History of Science, Stanford University
+%     \newline  \href{mailto:schieb@stanford.edu}{schieb@stanford.edu}}
+
+%   \cvcolumn[0.5]{\color{black}{\textbf{Roslyn Satchel}}}{\newline Blanche E. Seaver Professor 
+%      \newline of Communication, Pepperdine University 
+%      \newline \href{mailto:roslyn.satchel@pepperdine.edu}{roslyn.satchel@pepperdine.edu}} 
+% \end{cvcolumns}
+
+% ****************************
+
+% \cvdoubleitem{Committee}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+% \cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+% \cvitem{Co-advisor}
+%     {\textbf{Graham Jones} 
+%     \newline Associate Professor of Anthropology, MIT 
+%     \newline  \href{mailto:gmj@mit.edu}{gmj@mit.edu}}
+% \cvitem{Co-advisor}
+%     {\textbf{Arvind Satyanarayan} 
+%     \newline Assistant Professor of Electrical Engineering and Computer Science, MIT 
+%     \newline \href{mailto:arvindsatya@mit.edu}{arvindsatya@mit.edu}}
+% \cvitem{Committee member}
+%     {\textbf{William Deringer} 
+%     \newline Associate Professor of Science, Technology, and Society, MIT 
+%     \newline \href{mailto:deringer@mit.edu}{deringer@mit.edu}}
+% \cvitem{Committee member}
+%     {\textbf{Eden Medina} 
+%     \newline Associate Professor of Science, Technology, and Society, MIT 
+%     \newline \href{mailto:eden@mit.edu}{eden@mit.edu}}
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+% \nocite{*}
+% \bibliographystyle{plain}
+% \bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\end{document}
+
+
+%% end of file `template.tex'.
