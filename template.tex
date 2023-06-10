@@ -34,11 +34,17 @@
 \usepackage{fancyhdr}
 \usepackage[fixed]{fontawesome5}
 \usepackage{textcomp}
+\usepackage{lastpage}
 
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+\fancypagestyle{plain}{%
+  \renewcommand{\headrulewidth}{0pt}%
+  \fancyhf{}%
+  \fancyfoot[C]{\thepage\ of \pageref{LastPage}}}
 
-\fancyhead{}
-\fancyfoot{}
-\cfoot{\thepage{}~of~7}
+% \fancyhead{}
+% \fancyfoot{}
+% \cfoot{\thepage{}~of~7}
 % \pagestyle{fancy}
 % \renewcommand{\headrulewidth}{0pt}
 % \renewcommand{\footrulewidth}{0pt}
@@ -49,11 +55,11 @@
 % personal data
 \name{}{Crystal Lee}
 \renewcommand*{\namefont}{\fontsize{24}{28}\mdseries\upshape}
-\email{crystall@mit.edu}                               % optional, remove / comment the line if not wanted
-\homepage{http://web.mit.edu/crystall/www/}                         % optional, remove / comment the line if not wanted
+\email{crystaljjlee@mit.edu}                               % optional, remove / comment the line if not wanted
+\homepage{https://www.crystaljjlee.com}                         % optional, remove / comment the line if not wanted
 \social[twitter]{crystaljjlee}                             % optional, remove / comment the line if not wanted
 %\social[github]{crystaljjlee}                              % optional, remove / comment the line if not wanted
-\extrainfo{Updated July 2022}                 % optional, remove / comment the line if not wanted
+\extrainfo{Updated June 2023}                 % optional, remove / comment the line if not wanted
 %\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
 %\quote{Some quote}                                 % optional, remove / comment the line if not wanted
 
@@ -77,10 +83,10 @@
 \section{Appointments}
     % \cventry{July 2023--}{Assistant Professor}{}{Computational Media and Design, MIT}{}{Institute for Data, Systems, and Society (IDSS), Schwarzman College of Computing \newline Comparative Media Studies }
 
-    \cventry{July 2023--}{Assistant Professor}{}{Computational Media and Design, MIT}{}{Comparative Media Studies }
+    \cventry{July 2023--}{Assistant Professor}{}{Computational Media and Design, MIT}{}{Joint appointment in the Schwarzman College of Computing and Comparative Media Studies / Writing}
     \cventry{2022--}{Faculty Associate}{}{Berkman Klein Center for Internet and Society, Harvard University}{}{Co-lead, Ethical Tech Working Group. Former Fellow (2020--2021) and Affiliate (2021--2022).}
     
-    \cventry{2022--}{Senior Fellow}{}{Responsible Computer Science}{Mozilla}{}
+    \cventry{2022--}{Senior Fellow}{}{Responsible Computing}{Mozilla}{}
     
     \cventry{2022--2023}{Postdoctoral Associate}{}{Schwarzman College of Computing}{MIT}{}
     
@@ -206,6 +212,8 @@
 
 % ------ INVITED SEMINAR TALKS ------
 \section{Invited Seminar Talks}
+
+\cvitem{May 2023}{``Who's Responsible for Responsible Tech?'' University at Buffalo, Computer Science and Engineering Seminar (May 8, 2023). }
 
 \cvitem{July 2021}{``\href{https://vimeo.com/575214006}{Viral Visualizations: How Coronavirus Skeptics Use Orthodox Data Practices to Promote Unorthodox Science Online}.'' DUB Shorts, University of Washington (July 14, 2021).}
 
@@ -400,6 +408,7 @@
 
 \section{Teaching}
 \subsection{Guest Lectures}
+\cvitem{Spring 2023}{Judge for final projects, Machine Learning and Society (Atri Rudra), University at Buffalo}
 \cvitem{Spring 2023}{``Academic ableism,'' Feminist Disability Studies (Lydia XZ Brown), Georgetown}
 \cvitem{Spring 2020}{``Methods in Spatial History,'' Intro to Digital History (Stephan Risi), MIT}
 \cvitem{Fall 2019}{``Mapping and Forensic History,'' Forensic History (Kate Brown), MIT}
